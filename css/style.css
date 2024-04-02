@@ -9,14 +9,13 @@
 html{
     box-sizing: border-box;
 	font-family: 'Gilroy';
-	background-color: #3e3e40;
+	background-color: #3e3e40;	
 }
 *,*::before,*::after{
     box-sizing: inherit;
 }
-
 body{
-	text-align: center;
+	/* text-align: center; */
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-size: 16px;
@@ -26,32 +25,36 @@ body{
 }
 
 .wrapper{
-	max-width: 1200px;
+	max-width: 1350px;
 	margin: 0 auto;
 	}
 
 .form{
-	margin-left: 200px;
-	margin-top:120px;
- 	/* background-color: #3e3e40; 
-	width: 862px; 
-	height: 477px; 
-	border: solid 2px; 
-	border-radius: 30px;
-	border-color:#f7f9f9  */
-	/* transform: scale(1.3,1.3) */
-	rotate:180deg
+	width: 860px;
+	height: 470px;
+	border: #fff solid;
+	border-radius: 20px;
+	margin-left: 245px;
+	margin-top: 17%;
 }
+/* .verticalline{	
+	border: #fff solid;
+	height: 465px;
+	border-width: 0.1em;
+	margin-left:370px;
+	margin-top:-418px;
+
+} */
 .picture1{
-	margin-left:800px;
-	margin-top:-597px;
+	/* margin-left:800px;
+	margin-top:-597px; */
 	position:absolute;
 	z-index: -1;
 	rotate: 0 deg;
 }
 .picture2{
-	margin-left:-159px;
-	margin-top:-392px;
+	/* margin-left:-159px;
+	margin-top:-392px; */
 	position:absolute;
 	z-index: -1
 }
@@ -102,10 +105,84 @@ body{
 	position:absolute;
 	z-index: 0;
 }
-/* .svetik{
-	margin-left:830px;
-	margin-top:-65px;
-	position:absolute;
-	z-index: 1;
-} */
+.phoneField {
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 150px;
+	margin-left: 450px;
+	background-color: #3e3e40;
 
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+}
+.passwordField {
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+
+}
+.nicknameField{
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+}
+.repasswordField{
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+}
+.loginButton {
+	margin-left: 535px;
+	margin-top: 30px;
+	height: 40px;
+	width: 145px;
+
+	background-color: #9887EF;
+	color: #fff;
+	border-radius: 9px;
+	border: #9887EF solid;
+
+	font-size: 26px;
+	font-family: 'Gilroy';
+	
+	margin-bottom: 30px;
+
+}
+
+.goToReg {
+	margin-left: 560px;
+	color: #fff;
+}
+
+.goToRegLink {
+	margin-left: 540px;
+	text-decoration: none;
+	color: #9887EF;
+}
