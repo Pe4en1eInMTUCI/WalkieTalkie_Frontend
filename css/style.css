@@ -113,7 +113,6 @@ body{
 	margin-top: 25px;
 	margin-left: 450px;
 	background-color: #3e3e40;
-
 	color: #fff;
 	font-family: 'Gilroy';
 	font-size: 28px;
@@ -192,7 +191,7 @@ body{
 	width:372px ;
 	height:467px ;
 	/* margin-left: 0px; */
-	margin-top:-420px;
+	margin-top:-344px;
 	z-index: 1;
 	border-left: 20px;
 	border-top: 20px;
@@ -202,13 +201,13 @@ body{
 	font-family:'Gilroy';
 	font-size:20px;
 	color: #fff;
-	margin-top: 90px ;
-	margin-left:460px;
+	margin-top: 10px ;
+	margin-left:470px;
 }
 .t_password{
 	font-family:'Gilroy';
 	font-size:20px;
 	color: #fff;
-	margin-top:200px;
+	margin-top:2px;
 	margin-left:460px
 }
