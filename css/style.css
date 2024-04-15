@@ -59,8 +59,8 @@ body{
 	z-index: -1
 }
 .text1{
-	margin-left:325px;
-	margin-top:-315px;
+	margin-left:50px;
+	margin-top:125px;
 	position:absolute;
 	z-index: 0;
 	
@@ -116,6 +116,8 @@ body{
 	color: #fff;
 	font-family: 'Gilroy';
 	font-size: 28px;
+	position:relative;
+	top:70px
 }
 .passwordField {
 	width: 320px;
@@ -129,6 +131,8 @@ body{
 	color: #fff;
 	font-family: 'Gilroy';
 	font-size: 28px;
+	position:relative;
+	top:70px
 
 }
 .nicknameField{
@@ -173,17 +177,43 @@ body{
 	
 	margin-bottom: 30px;
 
-}
+	position:relative;
+	top:100px
 
+}
+.loginButton1 {
+	margin-left: 535px;
+	margin-top: 30px;
+	height: 40px;
+	width: 145px;
+
+	background-color: #9887EF;
+	color: #fff;
+	border-radius: 9px;
+	border: #9887EF solid;
+
+	font-size: 26px;
+	font-family: 'Gilroy';
+	
+	margin-bottom: 30px;
+
+	position:relative;
+	top:-7px
+
+}
 .goToReg {
 	margin-left: 560px;
 	color: #fff;
+	position:relative;
+	bottom:-85px
 }
 
 .goToRegLink {
 	margin-left: 540px;
 	text-decoration: none;
 	color: #9887EF;
+	position:relative;
+	bottom:-90px
 }
  
 .form1{
@@ -196,18 +226,175 @@ body{
 	border-left: 20px;
 	border-top: 20px;
 	border-bottom:20px;
+	position:relative;
+}
+.form2{
+	border: #fff solid;
+	width:372px ;
+	height:467px ;
+	/* margin-left: 0px; */
+	/* margin-top:4px; */
+	z-index: 1;
+	border-left: 20px;
+	border-top: 20px;
+	border-bottom:20px;
+	position:relative;
+	bottom:486px
 }
 .t_number{
 	font-family:'Gilroy';
 	font-size:20px;
 	color: #fff;
-	margin-top: 10px ;
+	margin-top: 100px ;
 	margin-left:470px;
+	position:relative;
+	top:80px
+	
+}
+.t_number1{
+	font-family:'Gilroy';
+	font-size:18px;
+	color: #fff;
+	margin-top: 2px ;
+	margin-left:470px;
+	position:relative;
+	bottom:-30px;
+	
 }
 .t_password{
 	font-family:'Gilroy';
 	font-size:20px;
 	color: #fff;
 	margin-top:2px;
-	margin-left:460px
+	margin-left:460px;
+	position:relative;
+	top:90px;left: 10px;
+}
+.t_password1{
+	font-family:'Gilroy';
+	font-size:18px;
+	color: #fff;
+	margin-top:2px;
+	margin-left:470px;
+	position:relative;
+	top:20px;
+	/* left: 10px; */
+}
+.Confirmation1{
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+}
+.Confirmation2{
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+}
+.Confirmation3{
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+}
+.Confirmation4{
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 30px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+}
+.phoneField1 {
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 25px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+	position:relative;
+	top:5px
+}
+.passwordField1 {
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 25px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+	position:relative;
+	/* top:70px */
+}
+.nicknameField1 {
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 25px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+	position:relative;
+	top:5px
+}
+.repasswordField1 {
+	width: 320px;
+	height: 50px;
+	border: #9887EF solid;
+	border-radius: 13px;
+	margin-top: 25px;
+	margin-left: 450px;
+	background-color: #3e3e40;
+	color: #fff;
+	font-family: 'Gilroy';
+	font-size: 28px;
+	position:relative;
+	/* top:70px */
+}
+.t_information{
+	font-family:'Gilroy';
+	font-size:20px;
+	color: #fff;
+	margin-top: 100px ;
+	margin-left:470px;
+	position:relative;
+	top:80px
+
 }
