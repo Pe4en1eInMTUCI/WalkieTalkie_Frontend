@@ -24,6 +24,7 @@
 }
 
 
+
 html{
     box-sizing: border-box;
 	font-family: 'Gilroy';
@@ -46,7 +47,6 @@ body{
 	max-width: 1350px;
 	margin: 0 auto;
 }
-
 
 .form{
 	width: 860px;
@@ -73,3 +73,33 @@ body{
 }
 
 
+.conf {
+	height: 470px;
+	width: 470px;
+	color: #fff;
+	align-items: center;
+	text-align: center;
+
+    font-family: 'Gilroy Medium';
+}
+
+.confText {
+	margin-top: 50px;
+	padding-left: 30px;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.confCode {
+    font-family: 'Gilroy Bold';
+	text-align: center;
+	margin-top: 30px;
+	background: #3e3e40;
+	border: #9887EF 2px solid;
+	border-radius: 20px;
+	height: 60px;
+	width: 200px;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 32px;
+}
