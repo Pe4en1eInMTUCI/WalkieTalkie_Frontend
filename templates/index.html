@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=[device-width], initial-scale=1.0">
     <title>Walkie
         talkie</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href=".{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href=".{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
     <div class="wrapper">
         <div class="form">
             <div class="formLine">
-                <img src="./img/svg/logo.svg" class="form_logo">
+                <img src="{{ url_for('static', filename='img/svg/logo.svg') }}" class="form_logo">
             </div>
 
+            <div class="loginForm">
+                <h1 class="loginText">Вход</h1>
+                <input type="text" class="loginField" maxlength="14">
+                <input type="password" class="loginField">
+                <button class="loginBtn">Войти</button>
+
+                <div class="goToReg">
+                    <a>Нет аккаунта?<br></a>
+                    <a href="/register" class="goToRegBtn">Зарегистрируйся!</a>
+                </div>
+            </div>
                 
 
         </div>

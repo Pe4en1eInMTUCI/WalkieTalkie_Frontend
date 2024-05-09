@@ -24,34 +24,79 @@
 }
 
 
-
-.conf {
-	height: 470px;
+.loginForm {
+	height: 100%;
 	width: 470px;
 	color: #fff;
+
 	align-items: center;
 	text-align: center;
 
-    font-family: 'Gilroy Medium';
-}
-
-.confText {
-	margin-top: 50px;
-	padding-left: 30px;
-	padding-right: 30px;
-	font-size: 20px;
-}
-
-.confCode {
     font-family: 'Gilroy Bold';
+}
+
+.loginText {
+
+    margin-top: 50px;
+	padding-left: 30px;
+	padding: 30px;
+	font-size: 32px;
+
+}
+
+.loginField {
+
+    font-family: 'Gilroy Bold';
+	text-align: center;
+	margin-top: 20px;
+	background: #3e3e40;
+	border: #9887EF 2px solid;
+	border-radius: 20px;
+	height: 50px;
+	width: 350px;
+	color: #fff;
+	font-size: 32px;
+
+}
+
+
+.loginBtn {
+
+    font-family: 'Gilroy Regular';
 	text-align: center;
 	margin-top: 30px;
 	background: #3e3e40;
 	border: #9887EF 2px solid;
 	border-radius: 20px;
-	height: 60px;
+	height: 50px;
 	width: 200px;
-	padding-left: 10px;
 	color: #fff;
 	font-size: 32px;
+
+    transition: 0.5s;
+
+}
+
+.loginBtn:hover {
+    transition: 0.5s;
+ 	background: #9887EF;
+}
+
+.goToReg {
+	margin-top: 10px;
+	font-family: 'Gilroy Thin';
+}
+
+.goToRegBtn {
+	margin-top: 20px;
+	font-family: 'Gilroy Medium';
+	text-decoration: none;
+	color: #fff;
+	transition: 0.5s;
+}
+
+
+.goToRegBtn:hover {
+	color: #9887EF;
+	transition: 0.5s;
 }
