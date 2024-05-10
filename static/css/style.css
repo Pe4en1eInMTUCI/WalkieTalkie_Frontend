@@ -66,9 +66,15 @@ body{
 	border-right: 5px solid #fff;
 }
 
-.form_logo {
+.formLogo {
 	margin-top: 150px;
 	margin-left: 50px;
 }
 
+.t_number{
+	margin-top: 100px;
+	align-items:center;
+	text-align: center;	
+	color:#fff;
+}
 
