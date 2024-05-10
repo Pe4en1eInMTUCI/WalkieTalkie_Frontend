@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>WalkieTalkie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="formLine">
+                <img src="{{ url_for('static', filename='img/svg/logo.svg') }}" class="formLogo">
+            </div>
+
+            <div class="loginForm">
+                <h1 class="regText">Регистрация</h1>
+                <input type="text" class="regField" placeholder="Имя">
+                <input type="text" class="regField" placeholder="Имя пользователя">
+                <input type="text" class="regField" maxlength="14" placeholder="Телефон">
+                <input type="password" class="regField" placeholder="Пароль">
+                <button class="loginBtn">Далее</button>
+
+                <div class="goToReg">
+                    <a>Есть аккаунт?<br></a>
+                    <a href="/login" class="goToRegBtn">Войди!</a>
+                </div>
+            </div>
+                
+
+        </div>
+    </div>
+</body>
+</html>
