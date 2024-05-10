@@ -6,14 +6,14 @@
     <title>Walkie
         talkie</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-    <link rel="stylesheet" href=".{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href=".{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
     <div class="wrapper">
         <div class="form">
             <div class="formLine">
-                <img src="{{ url_for('static', filename='img/svg/logo.svg') }}" class="form_logo">
+                <img src="{{ url_for('static', filename='img/svg/logo.svg') }}" class="formLogo">
             </div>
 
             <div class="loginForm">
