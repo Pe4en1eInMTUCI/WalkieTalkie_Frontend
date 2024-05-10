@@ -40,8 +40,7 @@
 	margin-top: 130px;
 	padding-left: 30px;
 	padding-right: 30px;
-	font-size: 50px;
-
+	font-size: 24px;
 }
 
 .confCode {
@@ -79,5 +78,20 @@
 
 	background: #9887EF;
 	transition: 0.5s;
+
+}
+
+.confOM {
+
+	margin-top: 30px;
+	font-family: 'Gilroy Medium';
+	font-size: 20px;
+
+}
+
+.confOtherMethod {
+
+	text-decoration: none;
+	color: #fff;
 
 }
