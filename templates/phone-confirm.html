@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=[device-width], initial-scale=1.0">
     <title>bbbb</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/confirmation.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/confirmation.css') }}">
+</head> 
 <body>
     <div class="wrapper">
         <div class="form">
             <div class="formLine">
-                <img src="./img/svg/logo.svg" class="formLogo">
+                <img src="{{ url_for('static', filename='img/svg/logo.svg') }}">
             </div>
-
+            
             <div class="conf">
                 <h1 class="confText">
                     Введите последние 4 цифры номера телефона, с которого мы вам позвонили
                 </h1>
 
                 
-                <input type="text" class="confCode" maxlength="4">
+                <input type="number" class="confCode" maxlength="4">
             </div>
             
 
