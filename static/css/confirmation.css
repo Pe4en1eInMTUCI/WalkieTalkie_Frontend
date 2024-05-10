@@ -26,17 +26,18 @@
 
 
 .conf {
-	height: 470px;
+	height: 100%;
 	width: 470px;
 	color: #fff;
 	align-items: center;
 	text-align: center;
 
     font-family: 'Gilroy Medium';
+
 }
 
 .confText {
-	margin-top: 50px;
+	margin-top: 130px;
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 20px;
@@ -54,4 +55,28 @@
 	padding-left: 10px;
 	color: #fff;
 	font-size: 32px;
+}
+
+.confBtn {
+	height: 35px;
+	width: 270px;
+
+	margin-top: 35px;
+	
+	border: #9887EF 2px solid;
+	border-radius: 10px;
+	background: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy Medium';
+	font-size: 24px;
+
+	transition: 0.5s;
+}
+
+.confBtn:hover {
+
+	background: #9887EF;
+	transition: 0.5s;
+
 }
