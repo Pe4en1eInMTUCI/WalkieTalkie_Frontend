@@ -21,7 +21,7 @@ def login():
 
         match req:
             case "OK":
-                return redirect(url_for('/chats', phone=phone))
+                return redirect(url_for('chats'), code=307)
             case "wrong password":
                 pass
             case "user not exists":
@@ -46,18 +46,25 @@ def smscon():
     return render_template('sms-confirm.html')
 
 
-@app.route("/chats", methods=['POST'])
+@app.route("/chats", methods=['POST', 'GET'])
 def chats():
+    if request.method == "GET":
+        return redirect('login')
 
-    phone = request.form.get("phone")
+
+    phone = request.form.get('phone')
 
     data = {
         "phone": phone
     }
 
+    username = requests.post("http://127.0.0.1:1232/api/getUsernameByPhone", data={"phone": phone}).json()
+
+    print(username)
+
     req = requests.post("http://127.0.0.1:1232/api/getdialogs", data=data).json()
 
-    return render_template('chats.html', chatlist=req)
+    return render_template('chats.html', username=username['username'], chatlist=req)
 
 
 

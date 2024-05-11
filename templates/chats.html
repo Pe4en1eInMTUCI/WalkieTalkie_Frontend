@@ -9,6 +9,19 @@
 </head>
 <body>
     <ul class="chatsBlock">
+
+        <a href="" class="chat">
+            <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+            <div class="chatTextInfo">
+                <div class="userGreeting">
+                    Привет,
+                </div>
+                <div class="chatUsername">
+                    {{ username }}
+                </div>
+            </div>    
+        </a>
+
         {% for chat in chatlist %}
         <a href="" class="chat">
             <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
