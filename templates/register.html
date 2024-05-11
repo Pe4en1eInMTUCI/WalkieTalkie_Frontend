@@ -17,11 +17,11 @@
 
             <div class="loginForm">
                 <h1 class="regText">Регистрация</h1>
-                <form>
-                <input type="text" class="regField" placeholder="Имя" required>
-                <input type="text" class="regField" placeholder="Имя пользователя" required>
-                <input type="text" class="regField" maxlength="14" placeholder="Телефон" required>
-                <input type="password" class="regField" placeholder="Пароль" required>
+                <h1 class="errorMessage">{{ errorMessage }}</h1>
+                <form method="post">
+                    <input type="text" class="regField" maxlength="14" placeholder="Телефон" required name="phone">
+                    <input type="text" class="regField" placeholder="Имя пользователя" required name="username">
+                <input type="password" class="regField" placeholder="Пароль" required name="password">
                 <button class="loginBtn">Далее</button>
                 </form>
 

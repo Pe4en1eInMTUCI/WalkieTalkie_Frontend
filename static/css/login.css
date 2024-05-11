@@ -37,17 +37,14 @@
 
 .loginText {
 
-    margin-top: 50px;
-	padding-left: 30px;
-	padding: 30px;
+    margin-top: 80px;
 	font-size: 32px;
 
 }
 
 .regText {
 
-    margin-top: 25px;
-	padding-left: 30px;
+    margin-top: 80px;
 	font-size: 32px;
 
 }
@@ -71,7 +68,7 @@
 
     font-family: 'Gilroy Bold';
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 12px;
 	background: #3e3e40;
 	border: #9887EF 2px solid;
 	border-radius: 20px;

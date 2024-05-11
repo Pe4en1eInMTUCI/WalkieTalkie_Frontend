@@ -34,9 +34,39 @@ def login():
     if request.method == "GET":
         return render_template('login.html')
 
-@app.route("/register")
+@app.route("/register", methods=["GET", "POST"])
 def reg():
-    return render_template('register.html')
+    if request.method == "GET":
+        return render_template('register.html')
+
+    username = request.form.get("username")
+    phone = request.form.get("phone")
+    password = request.form.get("password")
+
+    isUsernameInt = False
+    try:
+        int(username)
+        isUsernameInt = True
+    except:
+        pass
+
+    if isUsernameInt:
+        return render_template('register.html', errorMessage="Имя пользователя должно содержать буквы!")
+
+    data = {
+        "phone": phone,
+        "username": username
+    }
+
+    req = requests.post("http://127.0.0.1:1232/api/possibleToReg", data=data).json()['status']
+
+    match req:
+        case "OK":
+            pass
+        case "username exists":
+            return render_template('register.html', errorMessage="Имя пользователя занято!")
+        case "phone exists":
+            return render_template('register.html', errorMessage="Номер телефона занят!")
 
 
 @app.route('/phoneconfirm')
