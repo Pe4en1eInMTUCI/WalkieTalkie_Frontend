@@ -6,3 +6,5 @@ fonts/.DS_Store
 .idea/WalkieTalkie_Frontend.iml
 *.xml
 *.iml
+/venv
+/venv
