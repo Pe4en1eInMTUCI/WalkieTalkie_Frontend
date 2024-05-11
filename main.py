@@ -31,6 +31,8 @@ def login():
             case "user not exists":
                 return render_template('login.html', errorMessage = 'Такого пользователя не существует!')
 
+
+
     if request.method == "GET":
         return render_template('login.html')
 
@@ -98,13 +100,15 @@ def phcon():
     inputCode = request.form.get("code")
 
 
-    if inputCode == session['voicecode']:
+
+    if str(inputCode) == str(session['voicecode']):
 
         data = {
             "phone": session['userdata']['phone'],
             "username": session['userdata']['username'],
             "password": session['userdata']['password']
         }
+
 
         reg_status = requests.post("http://127.0.0.1:1232/api/register", data=data).json()['status']
 
