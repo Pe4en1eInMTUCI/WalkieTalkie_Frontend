@@ -20,13 +20,15 @@
                     Введите 6 цифр из SMS
                 </h1>
 
-                
-                <input type="text" class="confCode" maxlength="6">
+                <h1 class="errorMessage">{{ errorMessage }}</h1>
 
-                <button class="confBtn">Зарегистрироваться</button>
+                <form method="post">
+                    <input type="text" class="confCode" maxlength="6" name="code">
+                    <button class="confBtn">Зарегистрироваться</button>
+                </form>
 
                 <div class="confOM">
-                    <a href="/phoneconfirm" class="confOtherMethod">Позвоните мне</a>
+                    <a href="/phone-confirm" class="confOtherMethod">Позвоните мне</a>
                 </div>
 
             </div>
