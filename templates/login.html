@@ -17,16 +17,19 @@
 
             <div class="loginForm">
                 <h1 class="loginText">Вход</h1>
-                <input type="text" class="loginField" maxlength="14" placeholder="Номер телефона">
-                <input type="password" class="loginField" placeholder="Пароль">
-                <button class="loginBtn">Войти</button>
+                <form method="post">
+                    <input type="text" class="loginField" maxlength="14" placeholder="Номер телефона" name="phone" required>
+                    <input type="password" class="loginField" placeholder="Пароль" name="password" required>
+                    <button class="loginBtn">Войти</button>
+                </form>
 
                 <div class="goToReg">
                     <a>Нет аккаунта?<br></a>
                     <a href="/register" class="goToRegBtn">Зарегистрируйся!</a>
                 </div>
             </div>
-                
+            
+        
 
         </div>
     </div>
