@@ -17,17 +17,19 @@
             
             <div class="conf">
                 <h1 class="confText">
-                    Введите последние 4 цифры номера телефона, с которого мы вам позвонили
+                    Введите последние 4 цифры номера телефона, с которого мы позвонили на номер +{{ userdata['phone'] }}
                 </h1>
                 
+                <h1 class="errorMessage">{{ errorMessage }}</h1>
                 
-                <input type="text" class="confCode" maxlength="4">
-             
-                <button class="confBtn">Зарегистрироваться</button>
 
-                <div class="confOM">
+                <form method="post">
+                    <input type="text" class="confCode" maxlength="4" required name="code">
+                    <button class="confBtn">Зарегистрироваться</button>
+                </form>
+                <!-- <div class="confOM">
                     <a href="/smsconfirm" class="confOtherMethod">Позвоните мне</a>
-                </div>  
+                </div>   -->
             </div>
         </div>
     </div>
