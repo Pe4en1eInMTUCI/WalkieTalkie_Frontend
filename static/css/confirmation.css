@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'Gilroy Medium';
+	src: url("../fonts/font/Gilroy-Medium.ttf");
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Gilroy Bold';
+	src: url("../fonts/font/Gilroy-Bold.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Regular';
+	src: url("../fonts/font/Gilroy-Regular.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Thin';
+	src: url("../fonts/font/Gilroy-Thin.ttf");
+	font-style: normal;
+}
+
+
+
+.conf {
+	height: 100%;
+	width: 470px;
+	color: #fff;
+	align-items: center;
+	text-align: center;
+
+    font-family: 'Gilroy Medium';
+
+}
+
+.confText {
+	margin-top: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 24px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 20px;
+
+}
+
+.confCode {
+    font-family: 'Gilroy Bold';
+	text-align: center;
+	margin-top: 30px;
+	background: #3e3e40;
+	border: #9887EF 2px solid;
+	border-radius: 20px;
+	height: 60px;
+	width: 200px;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 32px;
+}
+
+.confBtn {
+	height: 35px;
+	width: 270px;
+
+	margin-top: 35px;
+	
+	border: #9887EF 2px solid;
+	border-radius: 10px;
+	background: #3e3e40;
+
+	color: #fff;
+	font-family: 'Gilroy Medium';
+	font-size: 24px;
+
+	transition: 0.5s;
+}
+
+.confBtn:hover {
+
+	background: #9887EF;
+	transition: 0.5s;
+
+}
+
+.confOM {
+
+	margin-top: 30px;
+	font-family: 'Gilroy Medium';
+	font-size: 20px;
+
+}
+
+.confOtherMethod {
+
+	text-decoration: none;
+	color: #fff;
+
+}

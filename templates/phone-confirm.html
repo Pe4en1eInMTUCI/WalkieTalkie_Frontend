@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>bbbb</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/confirmation.css') }}">
+</head> 
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="formLine">
+                <img src="{{ url_for('static', filename='img/svg/logo.svg') }} " class="formLogo">
+            </div>
+            
+            <div class="conf">
+                <h1 class="confText">
+                    Введите последние 4 цифры номера телефона, с которого мы позвонили на номер +{{ userdata['phone'] }}
+                </h1>
+                
+                <h1 class="errorMessage">{{ errorMessage }}</h1> 
+
+                <form method="post">
+                    <input type="text" class="confCode" maxlength="4" required name="code">
+                    <button class="confBtn">Зарегистрироваться</button>
+                </form>
+                <div class="confOM">
+                    <a href="/sms-confirm" class="confOtherMethod">Отправить СМС</a>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>WalkieTalkie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="formLine">
+                <img src="{{ url_for('static', filename='img/svg/logo.svg') }}" class="formLogo">
+            </div>
+
+            <div class="loginForm">
+                <h1 class="loginText">Вход</h1>
+
+                <h1 class="errorMessage">{{ errorMessage }}</h1>
+
+                <form method="post" action="/login">
+                    <input type="text" class="loginField" maxlength="14" placeholder="Номер телефона" name="phone" required>
+                    <input type="password" class="loginField" placeholder="Пароль" name="password" required>
+                    <button class="loginBtn">Войти</button>
+                </form>
+
+                <div class="goToReg">
+                    <a>Нет аккаунта?<br></a>
+                    <a href="/register" class="goToRegBtn">Зарегистрируйся!</a>
+                </div>
+            </div>
+            
+        
+
+        </div>
+    </div>
+</body>
+</html>
