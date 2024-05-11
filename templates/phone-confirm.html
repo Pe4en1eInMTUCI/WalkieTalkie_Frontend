@@ -20,15 +20,14 @@
                     Введите последние 4 цифры номера телефона, с которого мы позвонили на номер +{{ userdata['phone'] }}
                 </h1>
                 
-                <h1 class="errorMessage">{{ errorMessage }}</h1>
-                
+                <h1 class="errorMessage">{{ errorMessage }}</h1> 
 
                 <form method="post">
                     <input type="text" class="confCode" maxlength="4" required name="code">
                     <button class="confBtn">Зарегистрироваться</button>
                 </form>
                 <div class="confOM">
-                    <a href="/sms-confirm" class="confOtherMethod">Отправить sms</a>
+                    <a href="/sms-confirm" class="confOtherMethod">Отправить СМС</a>
                 </div>  
             </div>
         </div>

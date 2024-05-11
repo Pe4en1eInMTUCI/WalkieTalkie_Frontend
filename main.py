@@ -119,7 +119,7 @@ def phcon():
     return render_template('phone-confirm.html', errorMessage="Неверный код!", userdata=session['userdata'])
 
 
-@app.route("/sms-сonfirm", methods=["POST","GET"])
+@app.route("/sms-confirm", methods=["POST","GET"])
 def smscon():
     if request.method=="GET":
 
@@ -136,7 +136,7 @@ def smscon():
     inputCode=request.form.get("code")
 
 
-    if inputCode==session['textcode']:
+    if str(inputCode) == str(session['textcode']):
 
         data={
              "phone": session['userdata']['phone'],

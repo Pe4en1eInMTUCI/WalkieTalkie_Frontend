@@ -8,3 +8,5 @@ fonts/.DS_Store
 *.iml
 /venv
 /venv
+.idea/misc.xml
+.idea/WalkieTalkie_Frontend.iml
