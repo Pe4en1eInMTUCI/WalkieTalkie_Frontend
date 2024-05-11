@@ -4,3 +4,5 @@ fonts/.DS_Store
 /.idea
 .idea/misc.xml
 .idea/WalkieTalkie_Frontend.iml
+*.xml
+*.iml
