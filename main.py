@@ -119,9 +119,39 @@ def phcon():
     return render_template('phone-confirm.html', errorMessage="Неверный код!", userdata=session['userdata'])
 
 
-# @app.route("/sms-сonfirm")
-# def smscon():
-#     return render_template('sms-confirm.html')
+@app.route("/sms-сonfirm", methods=["POST","GET"])
+def smscon():
+    if request.method=="GET":
+
+        if not "userdata" in session:
+            return render_template('login.html',erorMessage='INVALID SESSION')
+
+        code = requests.get(f"http://127.0.0.1:1232/api/textcode?userPhone=str({session['userdata']['phone']})").json()['code']
+
+
+        session['textcode']=code
+
+        return render_template('sms-confirm.html', userdata=session['userdata'])
+
+    inputCode=request.form.get("code")
+
+
+    if inputCode==session['textcode']:
+
+        data={
+             "phone": session['userdata']['phone'],
+             "username": session['userdata']['username'],
+             "password": session['userdata']['password']
+        }
+
+        reg_status = requests.post("http://127.0.0.1:1232/api/register", data=data).json()['status']
+
+        if reg_status == "OK":
+            return redirect(url_for('chats'), code=307)
+
+
+    return render_template('sms-confirm.html', errorMessage="Неверный код!", userdata=session['userdata'])
+
 
 
 @app.route("/chats", methods=['POST', 'GET'])
