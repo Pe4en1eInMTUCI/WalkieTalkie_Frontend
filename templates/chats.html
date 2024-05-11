@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Чаты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chats.css') }}">
+</head>
+<body>
+        <!-- <div class="chatsBlock">
+            <div class="chat">
+                <a class="chatLink" href="#">
+                    <a class="chatTitle">chat title</a>
+                </a>
+            </div>
+        </div> -->
+
+    <ul class="chatsBlock">
+        <a href="" class="chat">
+            <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+            <div class="chatTextInfo">
+                <div class="chatTitle">
+                    USERNAME
+                </div>
+                <div class="chatSubtitle">
+                    LAST MESSAGE FROM USERNAME
+                </div>
+            </div>    
+        </a>
+        <a href="" class="chat">
+            <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+            <div class="chatTextInfo">
+                <div class="chatTitle">
+                    USERNAME
+                </div>
+                <div class="chatSubtitle">
+                    LAST MESSAGE FROM USERNAME
+                </div>
+            </div>    
+        </a>
+        <a href="" class="chat">
+            <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+            <div class="chatTextInfo">
+                <div class="chatTitle">
+                    USERNAME
+                </div>
+                <div class="chatSubtitle">
+                    LAST MESSAGE FROM USERNAME
+                </div>
+            </div>    
+        </a>
+        <a href="" class="chat">
+            <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+            <div class="chatTextInfo">
+                <div class="chatTitle">
+                    USERNAME
+                </div>
+                <div class="chatSubtitle">
+                    LAST MESSAGE FROM USERNAME
+                </div>
+            </div>    
+        </a>
+        <a href="" class="chat">
+            <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+            <div class="chatTextInfo">
+                <div class="chatTitle">
+                    USERNAME
+                </div>
+                <div class="chatSubtitle">
+                    LAST MESSAGE FROM USERNAME
+                </div>
+            </div>    
+        </a>
+    </ul>
+
+    <div class="chatWindow">
+    </div>
+</body>
+</html>

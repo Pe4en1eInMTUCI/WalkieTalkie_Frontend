@@ -21,5 +21,10 @@ def smscon():
     return render_template('sms-confirm.html')
 
 
+@app.route("/chats")
+def chats():
+    return render_template('chats.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5050)
