@@ -19,13 +19,15 @@ def login():
 
         req = requests.post("http://127.0.0.1:1232/api/login", data=data).json()['status']
 
+        print(req)
+
         match req:
             case "OK":
                 return redirect(url_for('chats'), code=307)
-            case "wrong password":
-                pass
+            case "wrong pass":
+                return render_template('login.html', errorMessage = 'Неправильный пароль!')
             case "user not exists":
-                pass
+                return render_template('login.html', errorMessage = 'Такого пользователя не существует!')
 
 
         return render_template('login.html')

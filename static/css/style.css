@@ -23,6 +23,12 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Gilroy Light';
+	src: url("../fonts/font/Gilroy-Light.ttf");
+	font-style: normal;
+}
+
 
 html{
     box-sizing: border-box;
@@ -78,3 +84,11 @@ body{
 	color:#fff;
 }
 
+
+.errorMessage {
+
+	margin-top: -20px;
+	color: red;
+	font-family: 'Gilroy Light';
+
+}
