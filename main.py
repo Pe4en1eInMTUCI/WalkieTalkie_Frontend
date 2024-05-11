@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import requests
 
 app = Flask(__name__)
 
@@ -23,7 +24,14 @@ def smscon():
 
 @app.route("/chats")
 def chats():
-    return render_template('chats.html')
+
+    data = {
+        "username": "pe4en1e"
+    }
+
+    req = requests.post("http://127.0.0.1:1232/api/getdialogs", data=data).json()
+
+    return render_template('chats.html', chatlist=req)
 
 
 if __name__ == "__main__":
