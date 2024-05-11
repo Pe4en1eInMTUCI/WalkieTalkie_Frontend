@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'Gilroy Medium';
+	src: url("../fonts/font/Gilroy-Medium.ttf");
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Gilroy Bold';
+	src: url("../fonts/font/Gilroy-Bold.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Regular';
+	src: url("../fonts/font/Gilroy-Regular.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Thin';
+	src: url("../fonts/font/Gilroy-Thin.ttf");
+	font-style: normal;
+}
+
+
+.loginForm {
+	height: 100%;
+	width: 470px;
+	color: #fff;
+
+	align-items: center;
+	text-align: center;
+
+    font-family: 'Gilroy Bold';
+}
+
+.loginText {
+
+    margin-top: 80px;
+	font-size: 32px;
+
+}
+
+.regText {
+
+    margin-top: 80px;
+	font-size: 32px;
+
+}
+
+.loginField {
+
+    font-family: 'Gilroy Bold';
+	text-align: center;
+	margin-top: 20px;
+	background: #3e3e40;
+	border: #9887EF 2px solid;
+	border-radius: 20px;
+	height: 50px;
+	width: 350px;
+	color: #fff;
+	font-size: 24px;
+
+}
+
+.regField {
+
+    font-family: 'Gilroy Bold';
+	text-align: center;
+	margin-top: 12px;
+	background: #3e3e40;
+	border: #9887EF 2px solid;
+	border-radius: 20px;
+	height: 50px;
+	width: 350px;
+	color: #fff;
+	font-size: 24px;
+
+}
+
+.loginBtn {
+
+    font-family: 'Gilroy Regular';
+	text-align: center;
+	margin-top: 30px;
+	background: #3e3e40;
+	border: #9887EF 2px solid;
+	border-radius: 15px;
+	height: 40px;
+	width: 200px;
+	color: #fff;
+	font-size: 24px;
+
+    transition: 0.5s;
+
+}
+
+.loginBtn:hover {
+    transition: 0.5s;
+ 	background: #9887EF;
+}
+
+.goToReg {
+	margin-top: 10px;
+	font-family: 'Gilroy Thin';
+}
+
+.goToRegBtn {
+	margin-top: 20px;
+	font-family: 'Gilroy Medium';
+	text-decoration: none;
+	color: #fff;
+	transition: 0.5s;
+}
+
+
+.goToRegBtn:hover {
+	color: #9887EF;
+	transition: 0.5s;
+}

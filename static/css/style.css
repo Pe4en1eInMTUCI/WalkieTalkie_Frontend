@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'Gilroy Medium';
+	src: url("../fonts/font/Gilroy-Medium.ttf");
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Gilroy Bold';
+	src: url("../fonts/font/Gilroy-Bold.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Regular';
+	src: url("../fonts/font/Gilroy-Regular.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Thin';
+	src: url("../fonts/font/Gilroy-Thin.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Light';
+	src: url("../fonts/font/Gilroy-Light.ttf");
+	font-style: normal;
+}
+
+
+html{
+    box-sizing: border-box;
+	font-family: 'Gilroy';
+	background-color: #3e3e40;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #000;
+}
+
+.wrapper{
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+
+.form{
+	width: 860px;
+	height: 470px;
+	border: #fff solid 5px;
+	border-radius: 20px;
+	margin-left: 245px;
+
+	margin-top: 150px;
+
+	display: flex;
+
+}
+
+.formLine{
+	width: 380px;
+	height: 100%;
+	border-right: 5px solid #fff;
+}
+
+.formLogo {
+	margin-top: 150px;
+	margin-left: 50px;
+}
+
+.t_number{
+	margin-top: 100px;
+	align-items:center;
+	text-align: center;	
+	color:#fff;
+}
+
+
+.errorMessage {
+
+	margin-top: 5px;
+	color: red;
+	font-family: 'Gilroy Light';
+
+}

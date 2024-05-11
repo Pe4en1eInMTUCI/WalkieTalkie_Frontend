@@ -1,4 +1,14 @@
-
+fonts/.DS_Store
+.DS_Store
+/.idea
+.idea/misc.xml
+.idea/WalkieTalkie_Frontend.iml
+*.xml
+*.iml
+/venv
+/venv
+.idea/misc.xml
+.idea/WalkieTalkie_Frontend.iml
 .idea/workspace.xml
 venv/lib/python3.10/site-packages/__pycache__/_virtualenv.cpython-310.pyc
 venv/lib/python3.10/site-packages/_distutils_hack/__pycache__/__init__.cpython-310.pyc
