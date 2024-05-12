@@ -12,6 +12,12 @@
 }
 
 @font-face {
+	font-family: 'Gilroy Semibold';
+	src: url("../fonts/font/Gilroy-Semibold.ttf");
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Gilroy Regular';
 	src: url("../fonts/font/Gilroy-Regular.ttf");
 	font-style: normal;
@@ -29,19 +35,29 @@
     background-color: #f7f9f950;
 }
 
-.person{
-	margin-top: 15px;
-	height:35px;
-	weight:55px;
-	
-
+.shapkaContent {
+    height: 80px;
+    width: 100%;
+	display: flex;
 }
  
 .back{
-	height:40px;
-	font-size:30px;
-	margin-left: 100px;
-	/* background: #f7f9f950; */
-	border:0
+	display: flex;
+	height: 30px;
+	width: 110px;
+	text-decoration: none;
+}
 
+.backIMG {
+	margin-top: 25px;
+	height: 30px;
+}
+
+.backTEXT {
+	height: 30px;
+	margin-top: 22px;
+	margin-left: 10px;
+	font-family: 'Gilroy Semibold';
+	font-size: 28px;
+	color: #fff;
 }

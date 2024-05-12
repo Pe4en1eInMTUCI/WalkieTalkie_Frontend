@@ -10,10 +10,15 @@
 <body>
     <div class="shapka">
         <div class="wrapper">
-           <div class="back" href="/">
-            <img src="/static/img/svg/back-arrow.svg" > 
-            <a class="back_title">Назад</a>
-           </div>
+            <div class="shapkaContent">
+                <a class="back" href="/chats">
+                    <img src="{{ url_for('static', filename='img/svg/back-arrow.svg') }}" class="backIMG">
+                    <h1 class="backTEXT">Назад</h1>
+                </a>
+
+                
+
+            </div>
 
            
         </div>
