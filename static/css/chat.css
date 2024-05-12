@@ -39,6 +39,7 @@
     height: 80px;
     width: 100%;
 	display: flex;
+	text-align: center;
 }
  
 .back{
@@ -60,4 +61,26 @@
 	font-family: 'Gilroy Semibold';
 	font-size: 28px;
 	color: #fff;
+}
+
+.personTEXT{
+	height:35px;
+	width:55px;
+	color:#fff;
+	font-family:'Gilroy Semibold';
+	font-size: 28px;
+}
+
+.person_status{
+	height:35px;
+	width:55px;
+	color:#fff;
+	font-family:'Gilroy Semibold';
+	font-size: 11px;
+	margin-top:3px
+}
+
+.person{
+	margin-top:23px;
+	text-align: center;
 }
