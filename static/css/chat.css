@@ -28,3 +28,20 @@
     width: 100%;
     background-color: #f7f9f950;
 }
+
+.person{
+	margin-top: 15px;
+	height:35px;
+	weight:55px;
+	
+
+}
+ 
+.back{
+	height:40px;
+	font-size:30px;
+	margin-left: 100px;
+	/* background: #f7f9f950; */
+	border:0
+
+}
