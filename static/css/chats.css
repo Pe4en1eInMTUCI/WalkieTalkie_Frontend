@@ -27,13 +27,16 @@
 .chatsBlock {
     height: 100vh;
     width: 450px;
-    border-right: #fff 5px solid;
 
     display: flex;
     flex-direction: column;
 
-    overflow: scroll;
-    overflow-x: hidden;
+    /* overflow: scroll;
+    overflow-x: hidden; */
+
+    background: rgba(152, 135, 239, 0.2)
+
+
 }
 
 .chat:first-child {
@@ -83,7 +86,7 @@
 }
 
 .chat:hover {
-    background: #515152;
+    background: rgba(152, 135, 239, 0.25);
     transition: 0.3s;
 }
 
@@ -127,3 +130,8 @@
     margin-left: 30px;
 
 }
+
+
+/* CHAT WINDOW */
+
+
