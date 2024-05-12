@@ -184,6 +184,10 @@ def chats():
     return render_template('chats.html', username=username['username'], chatlist=req)
 
 
+@app.route("/chat", methods=['GET'])
+def chat():
+    return render_template('chat.html', username=username['username'])
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5050)
