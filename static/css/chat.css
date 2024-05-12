@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Gilroy Medium';
+	src: url("../fonts/font/Gilroy-Medium.ttf");
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Gilroy Bold';
+	src: url("../fonts/font/Gilroy-Bold.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Regular';
+	src: url("../fonts/font/Gilroy-Regular.ttf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Thin';
+	src: url("../fonts/font/Gilroy-Thin.ttf");
+	font-style: normal;
+}
+
+.shapka {
+    height: 80px;
+    width: 100%;
+    background-color: #f7f9f950;
+}
