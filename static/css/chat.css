@@ -136,3 +136,30 @@
 
 }
 
+.inputmessage{
+	max-width:500px;
+	min-width: 100px;
+	min-height: 60px;
+	border-radius:14px;
+	background: #9887EF;
+	
+}
+
+.outputmessage{
+	max-width:500px;
+	min-width: 100px;
+	min-height: 60px;
+	margin-left:850px;
+	border-radius:14px;
+	background: #A465E3;
+}
+
+.inputmessageContent, .outputmessageContent{
+	margin-top:12px;
+	margin-left:20px;
+	width: 460px;
+	display: block;
+	color:#fff;
+	font-family:'Gilroy Medium'
+}
+
