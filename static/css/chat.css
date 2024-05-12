@@ -137,8 +137,8 @@
 }
 
 .inputmessage{
-	max-width:500px;
-	min-width: 100px;
+	margin-top: 10px;
+	width: 500px;
 	min-height: 60px;
 	border-radius:14px;
 	background: #9887EF;
@@ -146,19 +146,22 @@
 }
 
 .outputmessage{
-	max-width:500px;
-	min-width: 100px;
+	margin-top: 10px;
+	width: 500px;
 	min-height: 60px;
-	margin-left:850px;
+	float: right;
 	border-radius:14px;
 	background: #A465E3;
 }
 
 .inputmessageContent, .outputmessageContent{
-	margin-top:12px;
-	margin-left:20px;
-	width: 460px;
-	display: block;
+	word-wrap: break-word;
+	padding-top:12px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom: 12px;
+	width: 500px;
+	display: inline-block;
 	color:#fff;
 	font-family:'Gilroy Medium'
 }
