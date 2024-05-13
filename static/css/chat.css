@@ -29,6 +29,12 @@
 	font-style: normal;
 }
 
+.wrapperChat{
+	margin: 0 auto;
+	width: 1050px;
+
+}
+
 .shapka {
     height: 80px;
     width: 100%;
@@ -64,7 +70,7 @@
 
 
 .person{
-	margin-left: 440px;
+	margin-left: 340px;
 	width: 250px;
 	text-decoration: none;
 	text-align: center;
@@ -87,7 +93,7 @@
 
 
 .useravatar {
-	margin-left: 490px;
+	margin-left: 390px;
 	margin-top: 10px;
 }
 
@@ -99,18 +105,19 @@
 
 .chatContent {
 
-	height: calc(100vh - 80px - 75px);
+	height: calc(100vh - 80px - 100px);
 
 }
 
 
 .messageInput {
+	margin-top: 20px;
 	display: flex;
 }
 
 .message-input-field {
 
-	width: 1250px;
+	width: 945px;
 	height: 55px;
 
 	background: rgba(152, 135, 239, 0.25);
@@ -127,13 +134,21 @@
 }
 
 .message-send-button {
-	margin-left: 45px;
+	margin-left: 50px;
 	height: 55px;
 	width: 55px;
-	border: 0;
-	background: url('../img/png/send-btn.png') center;
-	background-size: cover;
 
+	border-radius: 50px;
+	border: 0;
+
+	background: rgba(152, 135, 239, 0.25);
+
+}
+
+
+.message-send-button-pic {
+	height: 32px;
+	width: 32px;
 }
 
 .inputmessage{

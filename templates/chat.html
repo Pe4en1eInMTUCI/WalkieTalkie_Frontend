@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="shapka">
-        <div class="wrapper">
+        <div class="wrapperChat">
             <div class="shapkaContent">
                 <a class="back" href="/chats">
                     <img src="{{ url_for('static', filename='img/svg/back-arrow.svg') }}" class="backIMG">
@@ -37,9 +37,24 @@
             </div>
 
             <div class="messageInput">
-                <input type="text" class="message-input-field" placeholder="Напечатать...">
-                <button class="message-send-button"></button>
+                <input type="text" class="message-input-field" placeholder="Напечатать..." id="inputField" oninput="checkInput()">
+                <button class="message-send-button" id="sendButton" disabled>
+                    <img src="{{ url_for('static', filename='img/svg/send-arrow.svg') }}" class="message-send-button-pic">
+                </button>
             </div>
+
+            <script>
+                function checkInput() {
+                    var inputField = document.getElementById("inputField");
+                    var submitButton = document.getElementById("sendButton");
+        
+                    if (inputField.value.trim() !== "") { 
+                        submitButton.disabled = false; 
+                    } else {
+                        submitButton.disabled = true; 
+                    }
+                }
+            </script>
            
         </div>
     </div>
