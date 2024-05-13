@@ -29,6 +29,12 @@
 	font-style: normal;
 }
 
+
+.wrapperChat {
+    max-width: 1050px;
+	margin: 0 auto;
+}
+
 .shapka_chats{
     height: 80px;
     width: 100%;
@@ -152,7 +158,6 @@
     background-color: #515152;
     border:#515152;
     margin-left: 185px;
-    margin-top:-15px
 
 }
 
@@ -165,7 +170,7 @@
 .search{
     border:2px #fff solid;
     height:45px;
-    width:750px;
+    width:850px;
     border-radius:14px;
     margin-top:20px;
     margin-left:190px
