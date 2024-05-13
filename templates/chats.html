@@ -9,50 +9,66 @@
 </head>
 <body>
     <div class="shapka">
-    <div class="wrapperChat">
-        <div class="shapka_chats">
-            <button class="gear_wheel">
-                <img src="/static/img/svg/gear_wheel.svg">
-            </button>
-            <div class="search"> 
-                <input type="text" class="searchField" placeholder="Поиск...">
+        <div class="wrapperChat">
+            <div class="shapka_chats">
+                <button class="gear_wheel">
+                    <img src="/static/img/svg/gear_wheel.svg">
+                </button>
+                <div class="search"> 
+                    <input type="text" class="searchField" placeholder="Поиск...">
+                </div>
+                
+                <a class="avatar">
+                    <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">   
+                </a>
             </div>
-             
-            <a class="avatar">
-                <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">   
-            </a>
+            <ul class="chatsBlock">
+                
+
+                <!-- <a href="/" class="chat">
+                    <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+                    <div class="chatTextInfo">
+                        <div class="userGreeting">
+                            Привет,
+                        </div>
+                        <div class="chatUsername">
+                            {{ username }}
+                        </div>
+                    </div>    
+                </a> -->
+
+                {% for chat in chatlist %}
+                <a href="/chat" class="chat">
+                    <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+                    <div class="chatTextInfo">
+                        <div class="chatTitle">
+                            {{ chat }}
+                        </div>
+                        <div class="chatSubtitle">
+                        <h2 class='font'>LAST MESSAGE FROM USERNAME</h2>
+                        </div>
+                    </div>    
+                </a>
+                {% endfor %}
+            </ul>
         </div>
-        <ul class="chatsBlock">
-
-            <a href="/" class="chat">
-                <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
-                <div class="chatTextInfo">
-                    <div class="userGreeting">
-                        Привет,
-                    </div>
-                    <div class="chatUsername">
-                        {{ username }}
-                    </div>
-                </div>    
-            </a>
-
-            {% for chat in chatlist %}
-            <a href="/chat" class="chat">
-                <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
-                <div class="chatTextInfo">
-                    <div class="chatTitle">
-                        {{ chat }}
-                    </div>
-                    <div class="chatSubtitle">
-                        LAST MESSAGE FROM USERNAME
-                    </div>
-                </div>    
-            </a>
-            {% endfor %}
-        </ul>
+<div class="pop-upWindow">
+    <div class="pop-upWindow1">
+        <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar_pop-up">  
+        <div class="Nickname_pop-upField">  
+            <a class="Nickname_pop-up">Nickname</a>
+        </div>
     </div>
-    <div class="chatWindow">
-    </div>
+        <div class="phone_number">
+            <a>Номер телефона: phoneNumber </a>
+        </div>
+        <a class="settings" href="/">
+            <img src="/static/img/svg/gear_wheel.svg" class="gear_wheel1">
+            <h1 class='settingsTEXT'>Перейти в настройки</h1>
+        </a>
+</div>
+            <!-- <div class="chatWindow">
+            </div> -->
     </div>
 </body>
 </html>
