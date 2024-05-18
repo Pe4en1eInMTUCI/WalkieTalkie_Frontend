@@ -193,6 +193,8 @@
     width:550px;
     border-radius:15px;
     background: #9887EF;
+    /* opacity: 1;
+    transition: opacity 2s linear; */
 }
 
 .pop-upWindow1{
@@ -244,6 +246,60 @@
     color:#fff;
     margin-left:10px;
     margin-top:30px;
+}
+
+.pop-upSettings{
+    border:#9887ef3c;
+    height:430px;
+    width:550px;
+    border-radius:15px;
+    background: #9887EF;
+}
+.gear_wheel2{
+    width:50px;
+    height:100px;
+    margin-left:50px;
+    margin-top:35px;
+}
+.pop-upSettings1{
+    width:340px;
+    height:50px;
+    background:#9887EF;
+    display:flex;
+    text-decoration: none;
+    text-align:center;
+    margin-top: 100px;
+}
+.settingTEXT1{
+    font-family: 'Gilroy Semibold';
+    font-size:  55px ;
+    color:#fff;
+    margin-left:10px;
+    margin-top:50px;
+    
+}
+.change{
+    margin-top:100px;
+    text-decoration: none;
+    /* display: block; */
+    height: 140px;
+    color:#fff;
+    margin-left:50px
+}
+.ch_nickname{
+    font-family: 'Gillroy Semibold';
+    font-size: 28px;
+    margin-top:27px;
+}
+.ch_password{
+    font-family: 'Gillroy Semibold';
+    font-size: 28px;
+    margin-top:27px;
+}
+.ch_avatar{
+    font-family: 'Gillroy Semibold';
+    font-size: 28px; 
+    margin-top:27px;   
 }
 /* CHAT WINDOW */
 
