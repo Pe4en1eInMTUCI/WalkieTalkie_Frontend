@@ -195,10 +195,12 @@
     background: #9887EF;
     /* opacity: 1;
     transition: opacity 2s linear; */
+    /* display:none */
 }
 
 .pop-upWindow1{
     display:flex;
+    
     
 }
 
