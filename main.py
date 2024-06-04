@@ -156,30 +156,29 @@ def smscon():
 
 @app.route("/chats", methods=['POST', 'GET'])
 def chats():
-    # if request.method == "GET":
-    #     return redirect('login')
-    #
-    #
-    # phone = request.form.get('phone')
-    # if phone == None:
-    #     phone = session['userdata']['phone']
-    #
-    # session.clear()
-    #
-    # data = {
-    #     "phone": phone
-    # }
-    #
-    #
-    # username = requests.post("http://127.0.0.1:1232/api/getUsernameByPhone", data={"phone": phone}).json()
-    #
-    # req = requests.post("http://127.0.0.1:1232/api/getdialogs", data=data).json()
+    if request.method == "GET":
+        return redirect('login')
 
-    username = {
-        "username": "verstka"
+
+    phone = request.form.get('phone')
+    if phone == None:
+        phone = session['userdata']['phone']
+
+
+    data = {
+        "phone": phone
     }
 
-    req = ['chat1', 'chat2', 'chat3']
+
+    username = requests.post("http://127.0.0.1:1232/api/getUsernameByPhone", data={"phone": phone}).json()
+
+    req = requests.post("http://127.0.0.1:1232/api/getdialogs", data=data).json()
+
+    # username = {
+    #     "username": "verstka"
+    # }
+    #
+    # req = ['chat1', 'chat2', 'chat3']
 
     return render_template('chats.html', username=username['username'], chatlist=req)
 
