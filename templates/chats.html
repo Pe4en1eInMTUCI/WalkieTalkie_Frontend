@@ -8,81 +8,88 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/chats.css') }}">
 </head>
 <body>
-    <div class="shapka">
-        <div class="wrapperChat">
-            <div class="shapka_chats">
-                <button class="gear_wheel">
-                    <img src="/static/img/svg/gear_wheel.svg">
-                </button>
-                <div class="search"> 
-                    <input type="text" class="searchField" placeholder="Поиск...">
-                </div>
-                
-                <a class="avatar">
-                    <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">   
-                </a>
+<div class="shapka">
+    <div class="wrapperChat">
+        <div class="shapka_chats">
+            <button class="gear_wheel" onclick=toggleElement()>
+                <img src="/static/img/svg/gear_wheel.svg">
+            </button>
+            <div class="search"> 
+                <input type="text" class="searchField" placeholder="Поиск...">
             </div>
-            <ul class="chatsBlock">
-                
+            
+            <a class="avatar">
+                <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">   
+            </a>
+        </div>
+        <ul class="chatsBlock">
+            
 
-                <!-- <a href="/" class="chat">
-                    <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
-                    <div class="chatTextInfo">
-                        <div class="userGreeting">
-                            Привет,
-                        </div>
-                        <div class="chatUsername">
-                            {{ username }}
-                        </div>
-                    </div>    
-                </a> -->
+            <!-- <a href="/" class="chat">
+                <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+                <div class="chatTextInfo">
+                    <div class="userGreeting">
+                        Привет,
+                    </div>
+                    <div class="chatUsername">
+                        {{ username }}
+                    </div>
+                </div>    
+            </a> -->
 
-                {% for chat in chatlist %}
-                <a href="/chat" class="chat">
-                    <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
-                    <div class="chatTextInfo">
-                        <div class="chatTitle">
-                            {{ chat }}
-                        </div>
-                        <div class="chatSubtitle">
-                        <h2 class='font'>LAST MESSAGE FROM USERNAME</h2>
-                        </div>
-                    </div>    
-                </a>
-                {% endfor %}
-            </ul>
-        </div>
-<div class="pop-upWindow">
-    <div class="pop-upWindow1">
-        <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar_pop-up">  
-        <div class="Nickname_pop-upField">  
-            <a class="Nickname_pop-up">Nickname</a>
-        </div>
-    </div>
-        <div class="phone_number">
-            <a>Номер телефона: phoneNumber </a>
-        </div>
-        <a class="settings" href="/">
-            <img src="/static/img/svg/gear_wheel.svg" class="gear_wheel1">
-            <h1 class='settingsTEXT'>Перейти в настройки</h1>
+            {% for chat in chatlist %}
+            <a href="/chat" class="chat">
+                <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar">
+                <div class="chatTextInfo">
+                    <div class="chatTitle">
+                        {{ chat }}
+                    </div>
+                    <div class="chatSubtitle">
+                    <h2 class='font'>LAST MESSAGE FROM USERNAME</h2>
+                    </div>
+                </div>    
+            </a>
+            {% endfor %}
+        </ul>
+        
+        <!-- <section class="project_card" id="blur"> -->
+            <div class="pop-upWindow" id="myElement">
+                <div class="pop-upWindow1">
+                    <img src="{{ url_for('static', filename='img/svg/avatar.svg') }}" class="chatAvatar_pop-up">  
+                    <div class="Nickname_pop-upField">  
+                        <a class="Nickname_pop-up">Nickname</a>
+                    </div>
+                </div>
+                    <div class="phone_number">
+                        <a>Номер телефона: phoneNumber </a>
+                    </div>
+                        <!-- <a class="settings" onclick=toggleElement1()>
+                            <img src="/static/img/svg/gear_wheel.svg" class="gear_wheel1">
+                            <h1 class='settingsTEXT'>Перейти в настройки</h1>
+                        </a> -->
+
+            </div>
+        <!-- </section> -->
+
+    </div> 
+
+
+    <!-- <div class="pop-upSettings" id="myElement1">
+        <a class="pop-upSettings1">
+            <img src="/static/img/svg/gear_wheel.svg" class="gear_wheel2">
+            <h1 class="settingTEXT1">Настройки</h1>
         </a>
-</div> 
-
-
-<div class="pop-upSettings">
-    <a class="pop-upSettings1">
-         <img src="/static/img/svg/gear_wheel.svg" class="gear_wheel2">
-         <h1 class="settingTEXT1">Настройки</h1>
-    </a>
-    <div class="change">
-        <h1 class="ch_nickname" href="/">Сменить никнейм</h1>
-        <h1 class="ch_password" href="/">Сменить пароль</h1>
-        <h1 class="ch_avatar" href="/">Сменить аватарку</h1>
-    </div>
-</div> 
+        <div class="change">
+            <h1 class="ch_nickname" href="/">Сменить никнейм</h1>
+            <h1 class="ch_password" href="/">Сменить пароль</h1>
+            <h1 class="ch_avatar" href="/">Сменить аватарку</h1>
+        </div>
+    </div>  -->
 
             <!-- <div class="chatWindow">
             </div> -->
     </div>
+<script src="/static/js/settings.js">
+</script>
 </body>
 </html>

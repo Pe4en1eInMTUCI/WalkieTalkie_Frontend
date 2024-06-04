@@ -187,6 +187,7 @@ def chats():
 @app.route("/chat", methods=['GET'])
 def chat():
     return render_template('chat.html')
+    
 
 
 if __name__ == "__main__":

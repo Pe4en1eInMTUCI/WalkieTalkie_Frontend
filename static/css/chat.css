@@ -149,6 +149,8 @@
 .message-send-button-pic {
 	height: 32px;
 	width: 32px;
+	margin-right:5px;
+	margin-top:5px
 }
 
 .inputmessage{
