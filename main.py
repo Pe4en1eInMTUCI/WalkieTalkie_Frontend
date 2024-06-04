@@ -1,5 +1,3 @@
-import json
-
 from flask import Flask, render_template, redirect, request, session, url_for
 import requests
 
@@ -25,6 +23,10 @@ def login():
 
         match req:
             case "OK":
+                session['userdata'] = {
+                    "phone": phone,
+                    "username": requests.post("http://127.0.0.1:1232/api/getUsernameByPhone", data={"phone": phone}).json()
+                }
                 return redirect(url_for('chats'), code=307)
             case "wrong pass":
                 return render_template('login.html', errorMessage = 'Неправильный пароль!')
@@ -157,8 +159,8 @@ def smscon():
 @app.route("/chats", methods=['POST', 'GET'])
 def chats():
     if request.method == "GET":
-        return redirect('login')
-
+        if session['userdata'] != None:
+            return redirect('login')
 
     phone = request.form.get('phone')
     if phone == None:
