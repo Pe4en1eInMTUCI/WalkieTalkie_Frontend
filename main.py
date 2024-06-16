@@ -189,6 +189,7 @@ def chats():
 def chat():
     return render_template('chat.html')
     
+    
 
 
 if __name__ == "__main__":
